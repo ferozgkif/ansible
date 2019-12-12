@@ -1,6 +1,7 @@
 ---
 - name: deployment
   hosts: node
+  become: yes
   
   tasks:
   - name: install apache
