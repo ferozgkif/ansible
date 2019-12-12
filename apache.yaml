@@ -3,13 +3,13 @@
   hosts: apache
   
   tasks:
-  - name:install apache
-    yum :
-      name:httpd
-      state:present
-      dest:/var/www/html
+  - name: install apache
+    yum:
+      name: httpd
+      state: present
+      #  dest:/var/www/html
       
-  - name:start apache
+  - name: start apache
     service:
-      name:httpd
-      state:started
+      name: httpd
+      state: started
